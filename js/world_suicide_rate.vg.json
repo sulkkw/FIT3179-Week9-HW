@@ -94,8 +94,7 @@
       "from": {"data": "source_0"},
       "encode": {
         "update": {
-          "fill": {"value": "lightgray"},
-          "stroke": {"value": "white"},
+          "fill": {"value": "skyblue"},
           "ariaRoleDescription": {"value": "geoshape"}
         }
       },
@@ -160,7 +159,7 @@
             "scale": "color",
             "field": "Suicides Rate Per 100,000 population"
           },
-          "fillOpacity": {"value": 0.7},
+          "fillOpacity": {"value": 0.9},
           "strokeWidth": [
             {"test": "(length(data(\"select_store\")))", "value": 2},
             {"value": 0}
@@ -170,7 +169,7 @@
           },
           "ariaRoleDescription": {"value": "geoshape"},
           "description": {
-            "signal": "\"Suicides Rate Per 100,000 population: \" + (format(datum[\"Suicides Rate Per 100,000 population\"], \"\")) + \"; Country: \" + (isValid(datum[\"properties.NAME\"]) ? datum[\"properties.NAME\"] : \"\"+datum[\"properties.NAME\"])"
+            "signal": "\"Suicide rate per 100K population: \" + (format(datum[\"Suicides Rate Per 100,000 population\"], \"\")) + \"; Country: \" + (isValid(datum[\"properties.NAME\"]) ? datum[\"properties.NAME\"] : \"\"+datum[\"properties.NAME\"]) + \"; Suicides Rate Per 100,000 population: \" + (format(datum[\"Suicides Rate Per 100,000 population\"], \".2f\"))"
           }
         }
       },
@@ -202,10 +201,10 @@
   ],
   "legends": [
     {
+      "title": "Suicide rate per 100K population",
       "fill": "color",
       "labelOverlap": "greedy",
-      "symbolType": "circle",
-      "title": "Suicides Rate Per 100,000 population"
+      "symbolType": "circle"
     }
   ],
   "config": {}
