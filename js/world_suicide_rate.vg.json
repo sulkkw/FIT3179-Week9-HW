@@ -205,7 +205,7 @@
       "fill": "color",
       "labelOverlap": "greedy",
       "symbolType": "circle",
-      "title": "Suicides Rate Per 100,000 population"
+      "title": "Suicides Per 100,000 population"
     }
   ],
   "config": {}
